@@ -8,13 +8,13 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Particles
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Agent
+  - Detailed
+  - Stairs
+  - No Camera Clip
   - 
   - 
   - 
