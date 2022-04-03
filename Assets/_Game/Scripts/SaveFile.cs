@@ -1,12 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using BayatGames.SaveGameFree;
+using BayatGames.SaveGameFree.Types;
 
 public class SaveFile {
 
     // Game-related variables
-    public static string curentScene;
+    public string curentScene;
 
     // Player-related variables
-    public static Vector3 playerPosition;
+    public Vector3Save playerPosition;
 }

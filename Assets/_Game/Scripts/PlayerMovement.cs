@@ -34,6 +34,9 @@ public class PlayerMovement : MonoBehaviour {
         body = GetComponent<Rigidbody>();
         meshRenderer = GetComponent<MeshRenderer>();
         OnValidate();
+        if(SavePoint.saveFile != null){
+            transform.position = SavePoint.saveFile.playerPosition;
+        }
     }
 
     private void Update() {
