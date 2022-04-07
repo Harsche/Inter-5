@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/_Game/Scenes/Title Screen.unity
+    guid: e62cbcb8787692e4e8ec338c1247aaaa
+  - enabled: 1
+    path: Assets/_Game/Scenes/AlecsiaTest.unity
+    guid: 52fe91912847b67418e92439c72c8633
   m_configObjects: {}
