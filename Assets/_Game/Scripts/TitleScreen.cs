@@ -17,4 +17,8 @@ public class TitleScreen : MonoBehaviour {
         SavePoint.saveFile = saveFile;
         continueOption.GetComponent<Button>().onClick.AddListener(() => SceneManager.LoadScene(saveFile.curentScene));
     }
+
+    public void DeleteSave(){
+        SavePoint.saveFile = null;
+    }
 }
