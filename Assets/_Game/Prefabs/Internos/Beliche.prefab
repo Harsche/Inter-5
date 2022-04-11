@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: b348cb1ee3fbacb48b6835e8699ab5e2, type: 3}
+  - {fileID: 2100000, guid: 2a2c7aaba52c4de40ad0ba121b27d53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -104,7 +104,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2659314090954540420}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 161.8427, y: 0.6476363, z: 96.31198}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -176,7 +176,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: b348cb1ee3fbacb48b6835e8699ab5e2, type: 3}
+  - {fileID: 2100000, guid: 2a2c7aaba52c4de40ad0ba121b27d53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -257,7 +257,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: b348cb1ee3fbacb48b6835e8699ab5e2, type: 3}
+  - {fileID: 2100000, guid: 2a2c7aaba52c4de40ad0ba121b27d53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -338,7 +338,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: b348cb1ee3fbacb48b6835e8699ab5e2, type: 3}
+  - {fileID: 2100000, guid: 2a2c7aaba52c4de40ad0ba121b27d53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -419,7 +419,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: b348cb1ee3fbacb48b6835e8699ab5e2, type: 3}
+  - {fileID: 2100000, guid: 2a2c7aaba52c4de40ad0ba121b27d53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -500,7 +500,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: b348cb1ee3fbacb48b6835e8699ab5e2, type: 3}
+  - {fileID: 2100000, guid: 2a2c7aaba52c4de40ad0ba121b27d53c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
