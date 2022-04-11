@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/_Game/Scenes/Title Screen.unity
     guid: e62cbcb8787692e4e8ec338c1247aaaa
   - enabled: 1
-    path: Assets/_Game/Scenes/AlecsiaTest.unity
-    guid: 52fe91912847b67418e92439c72c8633
+    path: Assets/_Game/Scenes/J1.unity
+    guid: 2a78ada54248c2a4db0a437f92a7667b
   m_configObjects: {}

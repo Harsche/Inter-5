@@ -4,7 +4,7 @@ public class PlayerInteraction : MonoBehaviour{
     [SerializeField] private float interactDistance = 3f;
     [SerializeField] private LayerMask interactableLayer;
     private Transform myTransform;
-    private IInteractable interactable;
+    public static IInteractable interactable{ get; private set; }
 
     private void Awake(){
         myTransform = transform;
@@ -20,7 +20,14 @@ public class PlayerInteraction : MonoBehaviour{
 
     private void CheckForInteraction(){
         var halfExtents = new Vector3(1f, 0.75f, 0.1f);
-        Physics.BoxCast(
+        Collider[] colliders = Physics.OverlapSphere(
+            transform.position,
+            1.5f,
+            interactableLayer
+        );
+
+
+        /*Physics.BoxCast(
             myTransform.position,
             halfExtents,
             myTransform.forward,
@@ -28,15 +35,22 @@ public class PlayerInteraction : MonoBehaviour{
             myTransform.rotation,
             interactDistance,
             interactableLayer
-        );
+        );*/
 
-        if (hitInfo.collider != null){
-            interactable = hitInfo.collider.gameObject.GetComponent<IInteractable>();
+        //if (hitInfo.collider != null){
+        //    interactable = hitInfo.collider.gameObject.GetComponent<IInteractable>();
+        //    interactable.ToggleGlow(true);
+        //}
+        if (colliders.Length == 0)
+            interactable = null;
+        if (colliders.Length > 0 && interactable == null){
+            interactable = colliders[0].gameObject.GetComponent<IInteractable>();
+            interactable.ToggleGlow(true);
         }
-        
     }
 }
 
 public interface IInteractable{
     public void Interact();
+    public void ToggleGlow(bool value);
 }
