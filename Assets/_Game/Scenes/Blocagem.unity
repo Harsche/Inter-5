@@ -6221,9 +6221,9 @@ HingeJoint:
     targetVelocity: 0
     force: 0
     freeSpin: 0
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_Limits:
-    min: 0
+    min: -130
     max: 0
     bounciness: 0
     bounceMinVelocity: 0.2
@@ -6261,8 +6261,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.028229445, y: 0.07561241, z: 0.007356643}
-  m_Center: {x: 0, y: 0.000000014901161, z: -0.00000047683716}
+  m_Size: {x: 0.026479434, y: 0.07286669, z: 0.0023824957}
+  m_Center: {x: 0.00050528994, y: 0.0004218084, z: 0.00008760245}
 --- !u!1001 &604040056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27616,7 +27616,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20242
+  m_Name: pb_Mesh29404
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28889,7 +28889,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20680
+  m_Name: pb_Mesh30200
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
