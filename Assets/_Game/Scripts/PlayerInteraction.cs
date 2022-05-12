@@ -1,13 +1,27 @@
 using UnityEngine;
+using SUPERCharacter;
 
 public class PlayerInteraction : MonoBehaviour{
     [SerializeField] private float interactDistance = 3f;
     [SerializeField] private LayerMask interactableLayer;
+    [SerializeField] private SUPERCharacterAIO movement;
     private Transform myTransform;
     public static IInteractable interactable{ get; private set; }
+    public static PlayerInteraction Instance{ get; private set; }
+    
 
     private void Awake(){
+        if (Instance != null){
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
         myTransform = transform;
+    }
+
+    public void ToggleMovement(bool toggle){
+        movement.enabled = toggle;
     }
 
     private void Update(){

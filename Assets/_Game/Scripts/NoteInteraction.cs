@@ -1,8 +1,9 @@
 using UnityEngine;
 using DG.Tweening;
 
-public class MapInteraction : MonoBehaviour, IInteractable{
-    public Canvas map;
+[RequireComponent(typeof(Outline))]
+public class NoteInteraction : MonoBehaviour, IInteractable{
+    public Canvas canvas;
     private Outline outline;
 
     private void Awake(){
@@ -16,11 +17,14 @@ public class MapInteraction : MonoBehaviour, IInteractable{
     }
 
     public void Interact(){
-        map.enabled = true;
+        canvas.enabled = true;
+        PlayerInteraction.Instance.ToggleMovement(false);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         Tween tween = transform.DOScale(Vector3.zero, 0.5f);
         tween.SetLink(gameObject);
         tween.OnComplete(() => {
-            map.transform.SetParent(null);
+            canvas.transform.SetParent(null);
             gameObject.SetActive(false);
         });
     }
@@ -30,6 +34,9 @@ public class MapInteraction : MonoBehaviour, IInteractable{
     }
 
     public void CloseMap(){
-        map.enabled = false;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        PlayerInteraction.Instance.ToggleMovement(true);
+        canvas.enabled = false;
     }
 }
