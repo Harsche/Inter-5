@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 7442360451061445555}
   - component: {fileID: 6101634661540064055}
   - component: {fileID: 6967719207974091910}
-  - component: {fileID: 4306937097050273000}
+  - component: {fileID: 5865234303621824297}
   m_Layer: 0
   m_Name: Estante 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7442360451061445555
 Transform:
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4306937097050273003}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.087419435, y: -0.012604548, z: -0.9195058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -49,7 +49,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4306937097050273003}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 2
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -82,7 +82,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4306937097050273000
+--- !u!65 &5865234303621824297
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,5 +93,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.01, y: 0.01, z: 0.054202642}
-  m_Center: {x: -4.656613e-10, y: -2.3283064e-10, z: 0.02210132}
+  m_Size: {x: 3.0211835, y: 4.0573797, z: 1.2539259}
+  m_Center: {x: 0.00000005099531, y: -0.00000021354383, z: 0.51129216}
