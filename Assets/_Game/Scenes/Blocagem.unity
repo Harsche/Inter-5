@@ -16702,6 +16702,10 @@ PrefabInstance:
       value: -0.0005865615
       objectReference: {fileID: 0}
     - target: {fileID: 4116025874680744193, guid: cd383b58d845c7b41a309700887f7461, type: 3}
+      propertyPath: m_UseLimits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116025874680744193, guid: cd383b58d845c7b41a309700887f7461, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 2204.6807
       objectReference: {fileID: 0}
@@ -20635,6 +20639,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8928633604390533952, guid: 9af6410add497a442b278af6e3f323ed, type: 3}
+      propertyPath: m_Size.x
+      value: 0.0144519955
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928633604390533952, guid: 9af6410add497a442b278af6e3f323ed, type: 3}
+      propertyPath: m_Size.y
+      value: 0.014315069
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928633604390533952, guid: 9af6410add497a442b278af6e3f323ed, type: 3}
+      propertyPath: m_Size.z
+      value: 0.014925738
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928633604390533952, guid: 9af6410add497a442b278af6e3f323ed, type: 3}
+      propertyPath: m_Center.x
+      value: 0.0000000011641537
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928633604390533952, guid: 9af6410add497a442b278af6e3f323ed, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928633604390533952, guid: 9af6410add497a442b278af6e3f323ed, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8928633604390533956, guid: 9af6410add497a442b278af6e3f323ed, type: 3}
       propertyPath: m_Name
       value: Caixote 1
