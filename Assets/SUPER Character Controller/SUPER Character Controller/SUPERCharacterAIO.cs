@@ -1007,7 +1007,7 @@ public class SUPERCharacterAIO : MonoBehaviour{
                 currentGroundInfo.groundLayer = null;
                 currentGroundInfo.groundPhysicMaterial = currentGroundInfo.groundFromRay.collider.sharedMaterial;
                 var meshFilter = currentGroundInfo.groundFromRay.transform.GetComponent<MeshFilter>();
-                if(meshFilter == null) meshFilter = currentGroundInfo.groundFromRay.transform.parent.GetComponent<MeshFilter>();
+                if(meshFilter == null && currentGroundInfo != null) meshFilter = currentGroundInfo.groundFromRay.transform.parent.GetComponent<MeshFilter>();
                 currentGroundInfo.currentMesh = meshFilter.sharedMesh;
                 if(currentGroundInfo.currentMesh && currentGroundInfo.currentMesh.isReadable){
                     int limit = currentGroundInfo.groundFromRay.triangleIndex*3, submesh;
@@ -1021,7 +1021,7 @@ public class SUPERCharacterAIO : MonoBehaviour{
                 else{
                     var meshRenderer = currentGroundInfo.groundFromRay.collider.GetComponent<MeshRenderer>();
                     if(meshRenderer == null) currentGroundInfo.groundFromRay.collider.transform.parent.GetComponent<MeshRenderer>();
-                    if(currentGroundInfo != null) currentGroundInfo.groundMaterial = meshRenderer.sharedMaterial;
+                    if(currentGroundInfo != null && meshRenderer != null) currentGroundInfo.groundMaterial = meshRenderer.sharedMaterial;
                 }
             }
         }else{currentGroundInfo.groundMaterial = null; currentGroundInfo.groundLayer = null; currentGroundInfo.groundPhysicMaterial = null;}
