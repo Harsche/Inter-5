@@ -87,6 +87,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private CapsuleCollider m_Capsule;
         private float m_YRotation;
         private Vector3 m_GroundContactNormal;
+        private Vector3 cameraOffset;
         private bool m_Jump, m_PreviouslyGrounded, m_Jumping, m_IsGrounded;
 
 
@@ -123,6 +124,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_RigidBody = GetComponent<Rigidbody>();
             m_Capsule = GetComponent<CapsuleCollider>();
             mouseLook.Init (transform, cam.transform);
+            cameraOffset = cam.transform.localPosition;
         }
 
 
@@ -184,6 +186,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 }
             }
             m_Jump = false;
+
+            cam.transform.localPosition = Vector3.zero + cameraOffset;
         }
 
 

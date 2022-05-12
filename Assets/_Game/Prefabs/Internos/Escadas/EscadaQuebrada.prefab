@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 58777621978028235}
   - component: {fileID: 3998926516597626734}
   - component: {fileID: 1196828522063192996}
-  - component: {fileID: 529850886455000532}
   m_Layer: 0
   m_Name: EscadaQuebrada
   m_TagString: Untagged
@@ -82,17 +81,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &529850886455000532
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 836263543418274417}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5810040125307230900, guid: 00eaf328529e836439bf4cc7b4d54fa1, type: 3}
