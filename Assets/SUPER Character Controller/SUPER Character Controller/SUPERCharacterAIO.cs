@@ -1006,7 +1006,9 @@ public class SUPERCharacterAIO : MonoBehaviour{
             }else{
                 currentGroundInfo.groundLayer = null;
                 currentGroundInfo.groundPhysicMaterial = currentGroundInfo.groundFromRay.collider.sharedMaterial;
-                currentGroundInfo.currentMesh = currentGroundInfo.groundFromRay.transform.GetComponent<MeshFilter>().sharedMesh;
+                var meshFilter = currentGroundInfo.groundFromRay.transform.GetComponent<MeshFilter>();
+                if(meshFilter == null) meshFilter = currentGroundInfo.groundFromRay.transform.parent.GetComponent<MeshFilter>();
+                currentGroundInfo.currentMesh = meshFilter.sharedMesh;
                 if(currentGroundInfo.currentMesh && currentGroundInfo.currentMesh.isReadable){
                     int limit = currentGroundInfo.groundFromRay.triangleIndex*3, submesh;
                     for(submesh = 0; submesh<currentGroundInfo.currentMesh.subMeshCount; submesh++){
@@ -1015,7 +1017,12 @@ public class SUPERCharacterAIO : MonoBehaviour{
                         limit -= indices;
                     }
                     currentGroundInfo.groundMaterial = currentGroundInfo.groundFromRay.transform.GetComponent<Renderer>().sharedMaterials[submesh];
-                }else{currentGroundInfo.groundMaterial = currentGroundInfo.groundFromRay.collider.GetComponent<MeshRenderer>().sharedMaterial; }
+                }
+                else{
+                    var meshRenderer = currentGroundInfo.groundFromRay.collider.GetComponent<MeshRenderer>();
+                    if(meshRenderer == null) currentGroundInfo.groundFromRay.collider.transform.parent.GetComponent<MeshRenderer>();
+                    if(currentGroundInfo != null) currentGroundInfo.groundMaterial = meshRenderer.sharedMaterial;
+                }
             }
         }else{currentGroundInfo.groundMaterial = null; currentGroundInfo.groundLayer = null; currentGroundInfo.groundPhysicMaterial = null;}
         #if UNITY_EDITOR
