@@ -19888,6 +19888,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 516993310}
     m_Modifications:
+    - target: {fileID: 1234786790838651280, guid: 6c88098207302df49957183a14ba5413, type: 3}
+      propertyPath: m_Size.x
+      value: 0.039409515
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234786790838651280, guid: 6c88098207302df49957183a14ba5413, type: 3}
+      propertyPath: m_Size.y
+      value: 0.04127601
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234786790838651280, guid: 6c88098207302df49957183a14ba5413, type: 3}
+      propertyPath: m_Center.x
+      value: -0.00012612074
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234786790838651280, guid: 6c88098207302df49957183a14ba5413, type: 3}
+      propertyPath: m_Center.y
+      value: 0.00048421777
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234786790838651280, guid: 6c88098207302df49957183a14ba5413, type: 3}
+      propertyPath: m_Center.z
+      value: -8.854932e-12
+      objectReference: {fileID: 0}
     - target: {fileID: 1234786790838651283, guid: 6c88098207302df49957183a14ba5413, type: 3}
       propertyPath: m_Name
       value: Estante 2 (1)
@@ -20685,7 +20705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8928633604390533959, guid: 9af6410add497a442b278af6e3f323ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2198.33
+      value: 2199.88
       objectReference: {fileID: 0}
     - target: {fileID: 8928633604390533959, guid: 9af6410add497a442b278af6e3f323ed, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20693,7 +20713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8928633604390533959, guid: 9af6410add497a442b278af6e3f323ed, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -604.86
+      value: -605.883
       objectReference: {fileID: 0}
     - target: {fileID: 8928633604390533959, guid: 9af6410add497a442b278af6e3f323ed, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20723,7 +20743,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3781683897357716696, guid: 9af6410add497a442b278af6e3f323ed, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9af6410add497a442b278af6e3f323ed, type: 3}
 --- !u!1001 &809109953
 PrefabInstance:

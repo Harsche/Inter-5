@@ -202,7 +202,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh412368
+  m_Name: pb_Mesh1603630
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1157,7 +1157,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh448850
+  m_Name: pb_Mesh1590034
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22228,6 +22228,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6817638361354391145, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
+      propertyPath: stepUpSpeed
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6817638361354391145, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
+      propertyPath: maxStairRise
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6817638361354391145, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
       propertyPath: walkingSpeed
       value: 150
       objectReference: {fileID: 0}
@@ -22238,6 +22246,10 @@ PrefabInstance:
     - target: {fileID: 6817638361354391145, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
       propertyPath: crouchingSpeed
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6817638361354391145, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
+      propertyPath: hardSlopeLimit
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 6817638361354391145, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
       propertyPath: sprintingSpeed
@@ -22258,6 +22270,10 @@ PrefabInstance:
     - target: {fileID: 6817638361354391145, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
       propertyPath: enableSurvivalStats
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6817638361354391145, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
+      propertyPath: enableMovementControl
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6817638361354391145, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
       propertyPath: interactableLayer.m_Bits
@@ -22344,6 +22360,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4933389040400691574, guid: bf5c6e32a364cbc44b47b67e220e925c, type: 3}
   m_PrefabInstance: {fileID: 1224468464}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1801658128 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 836263543418274417, guid: 76904c863749fb546bc39eed6ea61f5f, type: 3}
+  m_PrefabInstance: {fileID: 529850885118247271}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1801658129
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801658128}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5810040125307230900, guid: 00eaf328529e836439bf4cc7b4d54fa1, type: 3}
 --- !u!4 &1815791720 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7336226880012837496, guid: add615c556de08f419b75aba8b9a642f, type: 3}
@@ -23991,7 +24026,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &7361206771823185246
 MonoBehaviour:
   m_ObjectHideFlags: 0
