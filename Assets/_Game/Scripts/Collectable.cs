@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using DG.Tweening;
 
+
 [RequireComponent(typeof(Outline))]
 public class Collectable : MonoBehaviour, IInteractable{
     [SerializeField] private Item item;

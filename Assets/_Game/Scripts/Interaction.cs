@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using DG.Tweening;
 
+[RequireComponent(typeof(Outline))]
 public class Interaction : MonoBehaviour, IInteractable{
     private Outline outline;
 
