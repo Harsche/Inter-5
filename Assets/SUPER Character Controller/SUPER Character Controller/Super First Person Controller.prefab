@@ -1,5 +1,110 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &449012440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 449012441}
+  - component: {fileID: 449012442}
+  m_Layer: 2
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &449012441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449012440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6817638361354391144}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &449012442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449012440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08287b8ed3d745548beb39cb059ac1ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &884105117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 884105118}
+  - component: {fileID: 884105119}
+  - component: {fileID: 884105120}
+  m_Layer: 0
+  m_Name: CameraInteraction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &884105118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884105117}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.01, z: 1.036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6817638360860843947}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &884105119
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884105117}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &884105120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884105117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321dc52197b87eb49814714ed2264fbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactDistance: 0.5
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  movement: {fileID: 6817638361354391145}
 --- !u!1 &6817638360860843948
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,6 +116,7 @@ GameObject:
   - component: {fileID: 6817638360860843947}
   - component: {fileID: 6817638360860843945}
   - component: {fileID: 6817638360860843946}
+  - component: {fileID: 2055037362}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -28,7 +134,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 884105118}
   m_Father: {fileID: 6817638361354391144}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41,8 +148,8 @@ Camera:
   m_GameObject: {fileID: 6817638360860843948}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -83,6 +190,39 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6817638360860843948}
   m_Enabled: 1
+--- !u!114 &2055037362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6817638360860843948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &6817638361354391147
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,7 +238,7 @@ GameObject:
   - component: {fileID: 6817638361354391142}
   m_Layer: 2
   m_Name: Super First Person Controller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,6 +255,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6817638360860843947}
+  - {fileID: 449012441}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -125,7 +266,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6817638361354391147}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 5661025f9f2ca43418cfe8b0f67b303d, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.3
@@ -172,7 +313,7 @@ MonoBehaviour:
   automaticallySwitchPerspective: 0
   perspectiveSwitchingKey_L: 0
   mouseInputInversion: 0
-  Sensitivity: 8
+  Sensitivity: 2
   rotationWeight: 4
   verticalRotationRange: 170
   standingEyeHeight: 0.8
@@ -189,9 +330,9 @@ MonoBehaviour:
   bodyCatchupSpeed: 2.5
   inputResponseFiltering: 2.5
   enableMovementControl: 1
-  walkingSpeed: 140
-  sprintingSpeed: 240
-  crouchingSpeed: 45
+  walkingSpeed: 150
+  sprintingSpeed: 300
+  crouchingSpeed: 9
   decelerationSpeed: 240
   sprintKey_L: 304
   crouchKey_L: 306
@@ -204,7 +345,7 @@ MonoBehaviour:
   isCrouching: 0
   toggleCrouch: 0
   crouchOverride: 0
-  isIdle: 0
+  isIdle: 1
   currentStance: 0
   stanceTransitionSpeed: 5
   crouchingHeight: 0.8
@@ -212,48 +353,49 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 51
-  hardSlopeLimit: 70
+  hardSlopeLimit: 75
   slopeInfluenceOnSpeed: 1
-  maxStairRise: 0.25
-  stepUpSpeed: 0.2
+  maxStairRise: 0.5
+  stepUpSpeed: 0.45
   canJump: 1
   holdJump: 0
   jumpEnhancements: 0
   Jumped: 0
   jumpKey_L: 32
-  jumpPower: 40
-  airControlFactor: 1
+  jumpPower: 60
+  airControlFactor: 0.5
   decentMultiplier: 2.5
   tapJumpMultiplier: 2.1
   isSliding: 0
-  canSlide: 1
+  canSlide: 0
   slidingDeceleration: 78
   slidingTransisionSpeed: 4
   maxFlatSlideDistance: 10
   currentGroundInfo:
-    isInContactWithGround: 0
-    isGettingGroundInfo: 0
+    isInContactWithGround: 1
+    isGettingGroundInfo: 1
     potentialStair: 0
     groundAngleMultiplier_Inverse: 1
     groundAngleMultiplier_Inverse_persistent: 1
     groundAngleMultiplier: 0
     groundAngle: 0
     groundAngle_Raw: 0
-    playerGroundPosition: 0
-    groundRawYPosition: 0
+    playerGroundPosition: 71.37687
+    groundRawYPosition: 70.49187
     groundInfluenceDirection: {x: 0, y: 0, z: 0}
-    groundNormal_Averaged: {x: 0, y: 0, z: 0}
-    groundNormal_Raw: {x: 0, y: 0, z: 0}
+    groundNormal_Averaged: {x: 0, y: 1, z: 0}
+    groundNormal_Raw: {x: 0, y: 1, z: 0}
     groundNormals_lowgrade: []
-    groundNormals_highgrade: []
-    groundTag: 
-    groundMaterial: {fileID: 0}
+    groundNormals_highgrade:
+    - {x: 0, y: 1, z: 0}
+    groundTag: Untagged
+    groundMaterial: {fileID: 2100000, guid: bbb235fff4f48426b863b36058ab66d2, type: 2}
     groundLayer: {fileID: 0}
     groundPhysicMaterial: {fileID: 0}
-  enableStaminaSystem: 1
+  enableStaminaSystem: 0
   jumpingDepletesStamina: 1
   Stamina: 100
-  currentStaminaLevel: 0
+  currentStaminaLevel: 100
   s_minimumStaminaToSprint: 5
   s_depletionSpeed: 2
   s_regenerationSpeed: 1.2
@@ -266,7 +408,7 @@ MonoBehaviour:
   headbobSpeed: 3
   headbobPower: 2
   ZTilt: 0.5
-  enableSurvivalStats: 1
+  enableSurvivalStats: 0
   defaultSurvivalStats:
     Health: 250
     Hunger: 100
@@ -284,11 +426,11 @@ MonoBehaviour:
     hasLowHealth: 0
     isStarving: 0
     isDehydrated: 0
-  interactKey_L: 261
+  interactKey_L: 101
   interactRange: 2.4
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   _1stPersonCharacterAnimator: {fileID: 0}
   _3rdPersonCharacterAnimator: {fileID: 0}
   a_velocity: 
