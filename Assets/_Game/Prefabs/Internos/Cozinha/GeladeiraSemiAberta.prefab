@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8238587051904754511}
   - component: {fileID: 8046988806895205878}
   - component: {fileID: 4850307943693630032}
+  - component: {fileID: 6731934101319632448}
   m_Layer: 0
   m_Name: GeladeiraSemiAberta
   m_TagString: Untagged
@@ -25,9 +26,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7735684030669693548}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.07455519, y: 0.023967965, z: 0.043861944}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 108.36353, y: 115.87314, z: -108.36353}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -59,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: e959d0975c3783c40bbf5a2276ae675e, type: 3}
+  - {fileID: 2100000, guid: 86ec1daa27b4dce42a16e2ecc0cccdd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6731934101319632448
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7735684030669693548}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.026372805, y: 0.055293035, z: 0.02283164}
+  m_Center: {x: 0.0000000011247941, y: -0.0000000061727485, z: -0.0048932466}

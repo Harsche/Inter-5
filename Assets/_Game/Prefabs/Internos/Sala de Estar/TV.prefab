@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6046945208019646840}
   - component: {fileID: 1140734169105155589}
   - component: {fileID: 4208742573174267044}
+  - component: {fileID: 3527939581081197759}
   m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
@@ -25,9 +26,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569483102356190717}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0375611, y: 0.016714735, z: 0.04961582}
-  m_LocalScale: {x: 1.1647968, y: 1.1647968, z: 1.1647968}
+  m_LocalScale: {x: 136.89903, y: 136.89906, z: 136.89903}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -59,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: e959d0975c3783c40bbf5a2276ae675e, type: 3}
+  - {fileID: 2100000, guid: 86ec1daa27b4dce42a16e2ecc0cccdd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3527939581081197759
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569483102356190717}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.021104695, y: 0.013101337, z: 0.012558447}
+  m_Center: {x: 0.0000009552498, y: -0.0043234196, z: -0.0008400261}

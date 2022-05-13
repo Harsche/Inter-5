@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7096457011759561151}
   - component: {fileID: 5517597536246452277}
   - component: {fileID: 6806873837926304335}
-  - component: {fileID: 4600294871142868789}
+  - component: {fileID: 7244148267016076506}
   m_Layer: 0
   m_Name: Criado Mudo
   m_TagString: Untagged
@@ -26,9 +26,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1379278211674697591}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.44, y: 0.46098778, z: -1.81}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.7344408, y: 2.164993, z: 3.154772}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -82,8 +82,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4600294871142868789
-MeshCollider:
+--- !u!65 &7244148267016076506
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,7 +92,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6782194208069360827, guid: 5b19483a94ac59c45a127dd84c285ab6, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.988142, y: 0.9112186, z: 0.55453587}
+  m_Center: {x: 0, y: 0.00000047683716, z: 0}
