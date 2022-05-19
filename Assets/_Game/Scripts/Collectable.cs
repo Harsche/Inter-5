@@ -13,7 +13,7 @@ public class Collectable : MonoBehaviour, IInteractable{
     }
 
     private void Update(){
-        if (this != PlayerInteraction.interactable)
+        if (PlayerInteraction.interactable != this)
             ToggleGlow(false);
     }
 
