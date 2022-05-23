@@ -63,7 +63,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 6271573414225017425, guid: ee18ce8592065a548b3d733302c02795, type: 3}
-  - {fileID: 2100000, guid: 2a2c7aaba52c4de40ad0ba121b27d53c, type: 2}
+  - {fileID: 2100000, guid: 8f2d0d89eb1340345b277ddae3886f45, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,8 +96,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0016463322, y: 0.0756124, z: 0.028218627}
-  m_Center: {x: 0.0000033330648, y: 0, z: 0}
+  m_Size: {x: 0.077636704, y: 2.9733877, z: 1.0963743}
+  m_Center: {x: -0.0031738274, y: 0.012486935, z: -0.00082397443}
 --- !u!54 &4116025874680744192
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -126,7 +126,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0.56}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 2231.712, y: 1.509, z: -597.12103}
+  m_ConnectedAnchor: {x: 2320.101, y: 2.792, z: -440.38892}
   m_UseSpring: 0
   m_Spring:
     spring: 0
