@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 1694634511097932438}
   - component: {fileID: 3244288489288075971}
   - component: {fileID: 7468713907986991931}
-  - component: {fileID: 352381871844630254}
+  - component: {fileID: 6288704938302636059}
+  - component: {fileID: 5988714095098097126}
   m_Layer: 0
   m_Name: Cadeira 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1694634511097932438
 Transform:
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 8f2d0d89eb1340345b277ddae3886f45, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,8 +83,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &352381871844630254
-MeshCollider:
+--- !u!65 &6288704938302636059
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,7 +93,19 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6066223183054203544, guid: 5b19483a94ac59c45a127dd84c285ab6, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.6648486, y: 0.68815124, z: 0.66320306}
+  m_Center: {x: 0.00012207036, y: -0.2854988, z: 3.3610684e-11}
+--- !u!65 &5988714095098097126
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7618208391186029552}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07530213, y: 0.5363041, z: 0.66320306}
+  m_Center: {x: -0.29465133, y: 0.36142236, z: -0.00000025637596}

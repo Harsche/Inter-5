@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5062475452478367562}
   - component: {fileID: 8254890221182072955}
   - component: {fileID: 2446767520957442165}
+  - component: {fileID: 6481332870173511633}
+  - component: {fileID: 8958751391168209689}
   m_Layer: 0
   m_Name: ChuveiroETorneiras
   m_TagString: Untagged
@@ -81,3 +83,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6481332870173511633
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724048415081297931}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.63648844, y: 1.2404974, z: 0.14642867}
+  m_Center: {x: 0.008119136, y: 0.0048451424, z: -0.15373008}
+--- !u!65 &8958751391168209689
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724048415081297931}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26440984, y: 0.24955976, z: 0.44982362}
+  m_Center: {x: 0.0025822297, y: 0.50030553, z: -0.0020328015}

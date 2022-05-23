@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1283796988502829014}
   - component: {fileID: 4069694525427981960}
   - component: {fileID: 2633842501916938128}
+  - component: {fileID: 486809528431496667}
   m_Layer: 0
   m_Name: PortaChaves
   m_TagString: Untagged
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &486809528431496667
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3794307200756027864}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2814649, y: 0.46033597, z: 0.08295133}
+  m_Center: {x: -0.000061010804, y: -0.000000044703484, z: -0.10214157}
