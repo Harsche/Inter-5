@@ -3,9 +3,64 @@ guid: 11733401cb7e447469e7812e7fcbb534
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ArvoreTipo1FolhasAmarelas
+    second: {fileID: 2100000, guid: b1f6407d6a013ae4cb1f408416a8f1a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ArvoreTipo1FolhasMarrons2
+    second: {fileID: 2100000, guid: 6fc7928b1c0d89047b68474af5fcc43a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ArvoreTipo1FolhasVerdes
+    second: {fileID: 2100000, guid: f7864961b988b7d4ab5ed2c3ae4ceb50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ArvoreTipo1TroncoGalhosAmarelo
+    second: {fileID: 2100000, guid: 8ea876d4e7120ae44a1306d1a597e82d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ArvoreTipo1TroncoGalhosMarrom
+    second: {fileID: 2100000, guid: 020ad950a6c41e848888b10259b64863, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ArvoreTipo1TroncoGalhosSecos
+    second: {fileID: 2100000, guid: 4aa55c9bf5a701844a8bd792c01d496c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ArvoreTipo1TroncoGalhosVerde
+    second: {fileID: 2100000, guid: 6c47456f1839e8b478f41ef7e5af24e7, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_BranchesBrown_BrushStye
+    second: {fileID: 2800000, guid: ff52dbe6596d88a4b9eb92a2b95b27a7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_BranchesYellow_BrushStye
+    second: {fileID: 2800000, guid: 02536c4cb052d614a8f1331f89d9e158, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TexturesCom_Branches_BrushStye
+    second: {fileID: 2800000, guid: 85e65b9e7435260408b7321a1b222d20, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tileable_tree_bark_texture_BrushStyle
+    second: {fileID: 2800000, guid: ded701e4a283fbf46bc118f44d2cc522, type: 3}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -31,7 +86,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 25
@@ -85,7 +140,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.25
+    globalScale: 25
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

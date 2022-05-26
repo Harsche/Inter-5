@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8928633604390533959}
   - component: {fileID: 8928633604390533953}
   - component: {fileID: 8928633604390533958}
-  - component: {fileID: 8928633604390533952}
   - component: {fileID: 3781683897357716696}
   m_Layer: 0
   m_Name: Caixote 1
@@ -83,19 +82,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8928633604390533952
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8928633604390533956}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 2.3283062e-10, y: -0.00000023841858, z: 0.000000059604645}
 --- !u!54 &3781683897357716696
 Rigidbody:
   m_ObjectHideFlags: 0
