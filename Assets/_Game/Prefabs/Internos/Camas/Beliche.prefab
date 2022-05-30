@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9099570125259511575}
   - component: {fileID: 7080832104274502115}
   - component: {fileID: 7690482465615636031}
+  - component: {fileID: 1179242176937790652}
   m_Layer: 0
   m_Name: BelicheEncosto1
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3146878455191246792}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.148, y: -0.00000004869884, z: 1.45}
+  m_LocalPosition: {x: -2.51, y: -0.00000004869884, z: 1.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4089723416327390638}
@@ -81,6 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1179242176937790652
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3146878455191246792}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3994622, y: 3.6197047, z: 0.041388735}
+  m_Center: {x: 2.4805443, y: 0, z: 0.06004464}
 --- !u!1 &3713865968862813972
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +118,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3713865968862813972}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2172.98, y: 5.98, z: -914.724}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -126,6 +140,7 @@ GameObject:
   - component: {fileID: 4054307779516694489}
   - component: {fileID: 7006425900125696134}
   - component: {fileID: 7635659874099463696}
+  - component: {fileID: 6388961698096245661}
   m_Layer: 0
   m_Name: BaseCamaBaixo3
   m_TagString: Untagged
@@ -141,7 +156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3804040457044282826}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.6573076, y: -0.947, z: 0.0008314818}
+  m_LocalPosition: {x: -0.019307852, y: -0.947, z: 0.0008314818}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4089723416327390638}
@@ -196,6 +211,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6388961698096245661
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3804040457044282826}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3567477, y: 0.05457595, z: 2.947484}
+  m_Center: {x: -0.000000059604645, y: -0.0025219172, z: 0.00008237362}
 --- !u!1 &8639334150997587910
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +235,7 @@ GameObject:
   - component: {fileID: 8062446629067490868}
   - component: {fileID: 8221347516982044816}
   - component: {fileID: 5801619593071128665}
+  - component: {fileID: 3400994512792575923}
   m_Layer: 0
   m_Name: BaseCamaCIma
   m_TagString: Untagged
@@ -222,7 +251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8639334150997587910}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.653, y: 0.74, z: -0.009}
+  m_LocalPosition: {x: -0.015000105, y: 0.74, z: -0.009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4089723416327390638}
@@ -277,6 +306,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3400994512792575923
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8639334150997587910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3567477, y: 0.04275921, z: 2.947484}
+  m_Center: {x: -0.000000059604645, y: 0.0033863932, z: 0.00008237362}
 --- !u!1 &9104423354897095132
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,6 +330,7 @@ GameObject:
   - component: {fileID: 8266495982967460061}
   - component: {fileID: 7170244238094726243}
   - component: {fileID: 4693939008140627915}
+  - component: {fileID: 760280466116486162}
   m_Layer: 0
   m_Name: BelicheEncosto2
   m_TagString: Untagged
@@ -303,7 +346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9104423354897095132}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.14, y: -0.00000004869884, z: -1.447}
+  m_LocalPosition: {x: -2.5020006, y: -0.00000004869884, z: -1.447}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4089723416327390638}
@@ -358,3 +401,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &760280466116486162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9104423354897095132}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3994622, y: 3.6197047, z: 0.051668912}
+  m_Center: {x: 2.480545, y: 0, z: -0.054730788}

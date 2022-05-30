@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3751074918537829412}
   - component: {fileID: 4763028701144787330}
   - component: {fileID: 2388715188298153940}
+  - component: {fileID: 8946495948109084217}
   m_Layer: 0
   m_Name: MoveisTamanhosRefs4:Colcao
   m_TagString: Untagged
@@ -81,6 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8946495948109084217
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6329167373525048597}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.345041, y: 0.17743954, z: 1.9804043}
+  m_Center: {x: -0.00000011920929, y: -0.00032391027, z: -4.038968e-28}
 --- !u!1 &8741762418392786126
 GameObject:
   m_ObjectHideFlags: 0
