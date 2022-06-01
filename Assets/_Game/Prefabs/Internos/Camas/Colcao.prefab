@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5803366416064143315}
   - component: {fileID: 4585977181460909845}
   - component: {fileID: 5179718068917619699}
+  - component: {fileID: 7140805586196551293}
   m_Layer: 0
   m_Name: Colcao
   m_TagString: Untagged
@@ -26,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057371539869627340}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.47626066, y: 0.06795847, z: 0.0030048036}
-  m_LocalScale: {x: 9.946915, y: 1.4206413, z: 21.724146}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2035940711074362990}
   m_RootOrder: 0
@@ -59,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 5e7f208834a055348a1aba27e38a7daa, type: 3}
+  - {fileID: 2100000, guid: ddcc79674e0b5c642b8871a802fae6f2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,6 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7140805586196551293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057371539869627340}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3287516, y: 0.22049367, z: 2.882695}
+  m_Center: {x: 0, y: 0.0015042424, z: 0}
 --- !u!1 &1660365803216153812
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +120,7 @@ Transform:
   m_GameObject: {fileID: 1660365803216153812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.5897305, y: 0.07098303, z: -0.0030048036}
-  m_LocalScale: {x: -19.03794, y: 19.03794, z: -19.03794}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5803366416064143315}
   m_Father: {fileID: 0}
