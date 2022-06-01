@@ -3,7 +3,7 @@ using DG.Tweening;
 
 [RequireComponent(typeof(Outline))]
 public class RequireItem : MonoBehaviour, IInteractable{
-    [SerializeField] private string requiredItem;
+    [SerializeField] private Item requiredItem;
     private Outline outline;
     private void Awake(){
         outline = GetComponent<Outline>();
@@ -16,12 +16,12 @@ public class RequireItem : MonoBehaviour, IInteractable{
     }
 
     public void Interact(){
+        if(Inventory.Instance.SelectedItem != requiredItem) return;
         if (!Inventory.Instance.RemoveItem(requiredItem)) return;
         ToggleGlow(true);
         Tween tween = transform.DOScale(Vector3.zero, 0.5f);
         tween.SetLink(gameObject);
         tween.OnComplete(() => gameObject.SetActive(false));
-        Debug.Log("SUCESSO");
     }
 
     public void ToggleGlow(bool value){
