@@ -13,12 +13,10 @@ MonoBehaviour:
   m_Name: Gerador de Dialogo
   m_EditorClassIdentifier: 
   dialogs:
-  - text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non ornare
-      dui. Phasellus maximus mi quis dolor ultricies accumsan.
+  - text: Olha, sr. Fluffy! Um mapa! Talvez aqui mostre aonde tem coisas de carro.
     time: 3
-  - text: In hendrerit vulputate augue, ultricies auctor libero finibus id. Quisque
-      commodo sem eu hendrerit fermentum. Aliquam erat volutpat.
+  - text: "A mam\xE3e deve ter visto um mapa e ido at\xE9 l\xE1."
     time: 3
-  - text: Fusce molestie turpis vel dolor tempor dictum. Vestibulum a justo nec justo
-      aliquet tempor.
+  - text: Eu aprendi na escola como ver mapas com a minha professora! Sinto falta
+      dela.
     time: 4
