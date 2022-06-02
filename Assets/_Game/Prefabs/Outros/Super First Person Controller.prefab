@@ -260,6 +260,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   movement: {fileID: 6817638361354391145}
+  playerRigidbody: {fileID: 6817638361354391143}
 --- !u!1 &2064384010
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6979493621230587641
 RectTransform:
   m_ObjectHideFlags: 0
@@ -487,7 +488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1240430939300832625
 RectTransform:
   m_ObjectHideFlags: 0
@@ -731,7 +732,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3753557202298635369
 RectTransform:
   m_ObjectHideFlags: 0
