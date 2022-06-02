@@ -5,6 +5,7 @@ public class PlayerInteraction : MonoBehaviour{
     [SerializeField] private float interactDistance = 3f;
     [SerializeField] private LayerMask interactableLayer;
     [SerializeField] private SUPERCharacterAIO movement;
+    [SerializeField] private Rigidbody playerRigidbody;
     private Transform myTransform;
     public static IInteractable interactable{ get; private set; }
     public static PlayerInteraction Instance{ get; private set; }
@@ -22,6 +23,7 @@ public class PlayerInteraction : MonoBehaviour{
 
     public void ToggleMovement(bool toggle){
         movement.controllerPaused = !toggle;
+        playerRigidbody.velocity = Vector3.zero;
     }
 
     private void Update(){

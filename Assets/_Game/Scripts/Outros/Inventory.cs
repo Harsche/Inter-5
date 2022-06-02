@@ -48,7 +48,7 @@ public class Inventory : MonoBehaviour{
             return;
         }
         selectedItemImage.enabled = true;
-        selectedItemImage.sprite = inventory[selectedIndex].itemSprite;
+        selectedItemImage.sprite = inventory[selectedIndex].itemSprites[0];
     }
 
     public void AddItem(Item item){
