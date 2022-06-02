@@ -6,6 +6,7 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Outline))]
 public class InteractionEventTrigger : MonoBehaviour, IInteractable{
     [SerializeField] private UnityEvent onInteract;
+    [SerializeField] private bool disableObject;
 
     private Outline outline;
 
