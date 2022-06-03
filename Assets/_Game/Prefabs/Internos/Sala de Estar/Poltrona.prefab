@@ -81,6 +81,92 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4212936736878608770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2390404957062901845}
+  - component: {fileID: 487231872135360045}
+  - component: {fileID: 1106210334869932472}
+  - component: {fileID: 1715230631390656781}
+  - component: {fileID: 2600528772330013867}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2390404957062901845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4212936736878608770}
+  m_LocalRotation: {x: -0, y: 0.11472644, z: -0, w: 0.9933971}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5768651787983095169}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 13.176, z: 0}
+--- !u!65 &487231872135360045
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4212936736878608770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5760732, y: 0.6873174, z: 1.1716008}
+  m_Center: {x: -0.000000008079676, y: -0.39230245, z: 0.08580018}
+--- !u!65 &1106210334869932472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4212936736878608770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1936144, y: 1.4882891, z: 0.47182292}
+  m_Center: {x: 0.00000056375404, y: 0.005646229, z: -0.39496464}
+--- !u!65 &1715230631390656781
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4212936736878608770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1532377, y: 0.7314522, z: 1.3157123}
+  m_Center: {x: 0.70393324, y: -0.13427389, z: 0.020060102}
+--- !u!65 &2600528772330013867
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4212936736878608770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1532377, y: 0.7314522, z: 1.3157123}
+  m_Center: {x: -0.7, y: -0.13427389, z: 0.020060102}
 --- !u!1 &7624081637014767832
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,7 +176,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5768651787983095169}
-  - component: {fileID: 7532669514621832847}
   - component: {fileID: 3071744957538018451}
   m_Layer: 0
   m_Name: Poltrona
@@ -111,23 +196,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2256437830048686347}
+  - {fileID: 2390404957062901845}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 119.459, z: 0}
---- !u!64 &7532669514621832847
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7624081637014767832}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3800322564269764250, guid: e959d0975c3783c40bbf5a2276ae675e, type: 3}
 --- !u!54 &3071744957538018451
 Rigidbody:
   m_ObjectHideFlags: 0

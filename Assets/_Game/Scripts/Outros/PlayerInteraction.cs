@@ -7,9 +7,12 @@ public class PlayerInteraction : MonoBehaviour{
     [SerializeField] private SUPERCharacterAIO movement;
     [SerializeField] private Rigidbody playerRigidbody;
     private Transform myTransform;
-    public static IInteractable Interactable{ get; private set; }
+    
     public SUPERCharacterAIO Movement => movement;
+    
+    public static IInteractable Interactable{ get; private set; }
     public static PlayerInteraction Instance{ get; private set; }
+    public static bool godMode;
     
 
     private void Awake(){

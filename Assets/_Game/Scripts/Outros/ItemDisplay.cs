@@ -8,6 +8,7 @@ public class ItemDisplay : MonoBehaviour{
 
     private int selectedSprite;
     private Item currentItem;
+    public bool displayingItem{ get; private set; }
 
     public static ItemDisplay Instance{ get; private set; }
 
@@ -41,6 +42,7 @@ public class ItemDisplay : MonoBehaviour{
     }
 
     public void ToggleDisplay(bool value){
+        displayingItem = value;
         for (int i = 0; i < transform.childCount; i++){
             transform.GetChild(i).gameObject.SetActive(value);
         }

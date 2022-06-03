@@ -5,9 +5,10 @@ namespace _Game.Scripts{
     public class PauseMenu : MonoBehaviour{
         [SerializeField] private GameObject pausePanel;
         [SerializeField] private CanvasGroup[] others;
-        
+
         private bool paused;
-        
+        private bool wasDisplaying;
+
         public event Action<bool> OnPause;
 
         public static PauseMenu Instance{ get; private set; }
@@ -31,8 +32,13 @@ namespace _Game.Scripts{
                 group.alpha = paused ? 0 : 1;
             }
 
+            if (paused) wasDisplaying = ItemDisplay.Instance.displayingItem;
+
             Cursor.visible = paused;
             Cursor.lockState = paused ? CursorLockMode.None : CursorLockMode.Locked;
+            if (paused || !wasDisplaying) return;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }

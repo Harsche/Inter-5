@@ -1783,6 +1783,50 @@ MonoBehaviour:
   displayImage: {fileID: 4056618611571030740}
   leftArrow: {fileID: 680548517}
   rightArrow: {fileID: 2064384010}
+--- !u!1 &6705829863317467531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5857974852394861619}
+  - component: {fileID: 2638854753383192189}
+  m_Layer: 0
+  m_Name: Hacks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5857974852394861619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6705829863317467531}
+  m_LocalRotation: {x: -0, y: -0.41094297, z: -0, w: -0.91166115}
+  m_LocalPosition: {x: -219.37805, y: 4.3489013, z: -150.35947}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6817638361354391144}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2638854753383192189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6705829863317467531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0f46a50c9a47fda8f3e05794062c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextScene: 
 --- !u!1 &6817638360860843948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,6 +1981,7 @@ Transform:
   - {fileID: 6817638360860843947}
   - {fileID: 1891943339}
   - {fileID: 5816117351274809712}
+  - {fileID: 5857974852394861619}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 182.496, z: 0}

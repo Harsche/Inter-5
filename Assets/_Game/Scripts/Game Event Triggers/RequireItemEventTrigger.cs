@@ -23,12 +23,14 @@ public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
     }
 
     public void Interact(){
-        if (Inventory.Instance.SelectedItem != requiredItem){
-            missingItem?.Invoke();
-            return;
-        }
+        if (!PlayerInteraction.godMode){
+            if (Inventory.Instance.SelectedItem != requiredItem){
+                missingItem?.Invoke();
+                return;
+            }
 
-        if (!Inventory.Instance.RemoveItem(requiredItem)) return;
+            if (!Inventory.Instance.RemoveItem(requiredItem)) return;
+        }
         ToggleGlow(true);
         onUseItem?.Invoke();
         if (!disableObject) return;
