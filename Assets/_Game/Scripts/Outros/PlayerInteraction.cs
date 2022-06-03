@@ -7,7 +7,8 @@ public class PlayerInteraction : MonoBehaviour{
     [SerializeField] private SUPERCharacterAIO movement;
     [SerializeField] private Rigidbody playerRigidbody;
     private Transform myTransform;
-    public static IInteractable interactable{ get; private set; }
+    public static IInteractable Interactable{ get; private set; }
+    public SUPERCharacterAIO Movement => movement;
     public static PlayerInteraction Instance{ get; private set; }
     
 
@@ -28,9 +29,9 @@ public class PlayerInteraction : MonoBehaviour{
 
     private void Update(){
         CheckForInteraction();
-        if (Input.GetKeyDown(KeyCode.F) && interactable != null){
-            interactable.Interact();
-            interactable = null;
+        if (Input.GetKeyDown(KeyCode.F) && Interactable != null){
+            Interactable.Interact();
+            Interactable = null;
         }
     }
 
@@ -58,10 +59,10 @@ public class PlayerInteraction : MonoBehaviour{
         //    interactable.ToggleGlow(true);
         //}
         if (colliders.Length == 0)
-            interactable = null;
-        if (colliders.Length > 0 && interactable == null){
-            interactable = colliders[0].gameObject.GetComponent<IInteractable>();
-            interactable.ToggleGlow(true);
+            Interactable = null;
+        if (colliders.Length > 0 && Interactable == null){
+            Interactable = colliders[0].gameObject.GetComponent<IInteractable>();
+            Interactable.ToggleGlow(true);
         }
     }
 }

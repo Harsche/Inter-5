@@ -1764,7 +1764,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -1787,6 +1787,7 @@ GameObject:
   - component: {fileID: 6817638361354391143}
   - component: {fileID: 6817638361354391145}
   - component: {fileID: 6817638361354391142}
+  - component: {fileID: 2135192695821951510}
   m_Layer: 2
   m_Name: Super First Person Controller
   m_TagString: Player
@@ -2136,6 +2137,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2135192695821951510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6817638361354391147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fa2f07114ca922478a4c2f16a55b072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 5
 --- !u!1 &7038584595597653320
 GameObject:
   m_ObjectHideFlags: 0

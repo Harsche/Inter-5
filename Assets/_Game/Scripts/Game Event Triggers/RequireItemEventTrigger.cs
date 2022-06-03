@@ -18,7 +18,7 @@ public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
     }
 
     private void Update(){
-        if (this != PlayerInteraction.interactable)
+        if (this != PlayerInteraction.Interactable)
             ToggleGlow(false);
     }
 
