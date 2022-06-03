@@ -2,7 +2,7 @@ using UnityEngine;
 using SUPERCharacter;
 
 public class PlayerInteraction : MonoBehaviour{
-    [SerializeField] private float interactDistance = 3f;
+    [SerializeField] private float interactRadius = 1f;
     [SerializeField] private LayerMask interactableLayer;
     [SerializeField] private SUPERCharacterAIO movement;
     [SerializeField] private Rigidbody playerRigidbody;
@@ -39,25 +39,10 @@ public class PlayerInteraction : MonoBehaviour{
         var halfExtents = new Vector3(1f, 0.75f, 0.1f);
         Collider[] colliders = Physics.OverlapSphere(
             transform.position,
-            1.5f,
+            interactRadius,
             interactableLayer
         );
-
-
-        /*Physics.BoxCast(
-            myTransform.position,
-            halfExtents,
-            myTransform.forward,
-            out RaycastHit hitInfo,
-            myTransform.rotation,
-            interactDistance,
-            interactableLayer
-        );*/
-
-        //if (hitInfo.collider != null){
-        //    interactable = hitInfo.collider.gameObject.GetComponent<IInteractable>();
-        //    interactable.ToggleGlow(true);
-        //}
+        
         if (colliders.Length == 0)
             Interactable = null;
         if (colliders.Length > 0 && Interactable == null){
