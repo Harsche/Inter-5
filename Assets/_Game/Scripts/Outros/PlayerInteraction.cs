@@ -47,7 +47,7 @@ public class PlayerInteraction : MonoBehaviour{
             Interactable = null;
         if (colliders.Length > 0 && Interactable == null){
             Interactable = colliders[0].gameObject.GetComponent<IInteractable>();
-            Interactable.ToggleGlow(true);
+            Interactable?.ToggleGlow(true);
         }
     }
 }

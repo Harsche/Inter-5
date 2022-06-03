@@ -14,7 +14,7 @@ public class Inventory : MonoBehaviour{
     private readonly List<Item> inventory = new List<Item>();
 
     public static Inventory Instance{ get; private set; }
-    public Item SelectedItem => inventory.FirstOrDefault();
+    public Item SelectedItem => inventory.Count >= 1 ? inventory[selectedIndex] : null;
 
     private void Awake(){
         if (Instance != null){
