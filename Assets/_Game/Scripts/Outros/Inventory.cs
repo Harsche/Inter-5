@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +14,7 @@ public class Inventory : MonoBehaviour{
     private readonly List<Item> inventory = new List<Item>();
 
     public static Inventory Instance{ get; private set; }
-    public Item SelectedItem => inventory[selectedIndex];
+    public Item SelectedItem => inventory.FirstOrDefault();
 
     private void Awake(){
         if (Instance != null){
