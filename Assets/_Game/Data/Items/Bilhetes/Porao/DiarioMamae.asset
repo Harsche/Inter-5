@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: DiarioMamae
   m_EditorClassIdentifier: 
   itemName: 
-  itemSprite: {fileID: 21300000, guid: 70b33ec93f72d364abb5cf10667f0671, type: 3}
+  itemSprites:
+  - {fileID: 21300000, guid: da1171db2d282c147947b07b0ba08a86, type: 3}
+  - {fileID: 21300000, guid: be29d04a3e63ac54e930f6a53009cf0f, type: 3}
+  - {fileID: 21300000, guid: 9c46f1e373ad70c418f487823d0e398c, type: 3}
+  - {fileID: 21300000, guid: e89eece1ec4f1ac4e9863a68af3e461a, type: 3}

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Mapa
   m_EditorClassIdentifier: 
   itemName: 
-  itemSprite: {fileID: 21300000, guid: defa6450088e8634d972ec118c3aab7b, type: 3}
+  itemSprites:
+  - {fileID: 21300000, guid: defa6450088e8634d972ec118c3aab7b, type: 3}

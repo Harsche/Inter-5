@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/_Game/Scenes/Porao.unity
     guid: d6972414d5a6b364193cded1e936bb87
   - enabled: 1
-    path: Assets/_Game/Scenes/Kindergarten.unity
+    path: Assets/_Game/Scenes/Blocagem.unity
     guid: 811a8a94170a960408785fd305984928
   - enabled: 0
     path: Assets/_Game/Scenes/Title Screen.unity

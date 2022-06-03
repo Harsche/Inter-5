@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: CartaDiretora
   m_EditorClassIdentifier: 
   itemName: 
-  itemSprite: {fileID: 21300000, guid: 23a9c9b5755e0f445b288ea2f839330b, type: 3}
+  itemSprites:
+  - {fileID: 21300000, guid: 23a9c9b5755e0f445b288ea2f839330b, type: 3}

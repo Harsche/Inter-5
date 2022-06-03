@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Bilhete2
   m_EditorClassIdentifier: 
   itemName: 
-  itemSprite: {fileID: 21300000, guid: 24ec25b34a634b44699c5997bfab8334, type: 3}
+  itemSprites:
+  - {fileID: 21300000, guid: 24ec25b34a634b44699c5997bfab8334, type: 3}

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6961128075255085613}
   - component: {fileID: 1488301397343975201}
   - component: {fileID: 2409210694878223043}
-  - component: {fileID: -6439884258854636733}
   m_Layer: 0
   m_Name: GiraGira
   m_TagString: Untagged
@@ -40,7 +39,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7277381781721104557}
-  m_Mesh: {fileID: 4094827531496430677, guid: 66bb8b9361ba5884d9227a54b4e055b7, type: 3}
+  m_Mesh: {fileID: 4094827531496430677, guid: ba4e0c9bfe2ca89429d66cad21c9de8e, type: 3}
 --- !u!23 &2409210694878223043
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -82,17 +81,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &-6439884258854636733
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7277381781721104557}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4094827531496430677, guid: 66bb8b9361ba5884d9227a54b4e055b7, type: 3}

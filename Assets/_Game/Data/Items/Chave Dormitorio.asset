@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Chave Dormitorio
   m_EditorClassIdentifier: 
   itemName: Chave Dormitorio
-  itemSprite: {fileID: 21300000, guid: 0cc086cf431207b41af382541fe38829, type: 3}
+  itemSprites:
+  - {fileID: 21300000, guid: 0cc086cf431207b41af382541fe38829, type: 3}

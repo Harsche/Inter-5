@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: NotaMamae
   m_EditorClassIdentifier: 
   itemName: 
-  itemSprite: {fileID: 21300000, guid: 70b33ec93f72d364abb5cf10667f0671, type: 3}
+  itemSprites:
+  - {fileID: 21300000, guid: 70b33ec93f72d364abb5cf10667f0671, type: 3}

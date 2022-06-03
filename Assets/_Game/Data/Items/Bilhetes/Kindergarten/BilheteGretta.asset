@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: BilheteGretta
   m_EditorClassIdentifier: 
   itemName: 
-  itemSprite: {fileID: 21300000, guid: 4ab71e75b28da72439f1fd1f6028af37, type: 3}
+  itemSprites:
+  - {fileID: 21300000, guid: 4ab71e75b28da72439f1fd1f6028af37, type: 3}

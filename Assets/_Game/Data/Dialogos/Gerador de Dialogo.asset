@@ -13,10 +13,23 @@ MonoBehaviour:
   m_Name: Gerador de Dialogo
   m_EditorClassIdentifier: 
   dialogs:
-  - text: Olha, sr. Fluffy! Um mapa! Talvez aqui mostre aonde tem coisas de carro.
+  - text: (Milla? MILLA?!)
     time: 3
-  - text: "A mam\xE3e deve ter visto um mapa e ido at\xE9 l\xE1."
+  - text: "Essa \xE9 a voz... MAM\xC3E!"
     time: 3
-  - text: Eu aprendi na escola como ver mapas com a minha professora! Sinto falta
-      dela.
+  - text: "Milla, como voc\xEA saiu do por\xE3o? Aqui \xE9 muito perigoso. Voc\xEA
+      foi extremamente irrespons\xE1vel!"
     time: 4
+  - text: "Mam\xE3e, eu vi o di\xE1rio e eu li alguns pap\xE9is e o governo disse
+      que uma usina explodiu aqui! Era isso que eles queriam? Elas eram atr\xE1s
+      que estavam atras da gente?"
+    time: 4
+  - text: "Milla... voc\xEA n\xE3o deveria saber de nada disso. Vem, precisamos voltar
+      agora, \xE9 perigoso ficar aqui."
+    time: 3
+  - text: "Mas m\xE3e..."
+    time: 3
+  - text: Eu vou te explicar tudo assim que estiver seguras, okay? Eu prometo!
+    time: 3
+  - text: Certo...
+    time: 3
