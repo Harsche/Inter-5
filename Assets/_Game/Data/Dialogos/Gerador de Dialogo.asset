@@ -13,23 +13,24 @@ MonoBehaviour:
   m_Name: Gerador de Dialogo
   m_EditorClassIdentifier: 
   dialogs:
-  - text: (Milla? MILLA?!)
-    time: 3
-  - text: "Essa \xE9 a voz... MAM\xC3E!"
-    time: 3
-  - text: "Milla, como voc\xEA saiu do por\xE3o? Aqui \xE9 muito perigoso. Voc\xEA
-      foi extremamente irrespons\xE1vel!"
+  - text: "Ah n\xE3o... "
+    time: 2
+  - text: "S\xE3o eles? "
+    time: 2
+  - text: "\"\xC9 o carro delas. A placa \xE9 essa, n\xE3o tenho duvida\" "
     time: 4
-  - text: "Mam\xE3e, eu vi o di\xE1rio e eu li alguns pap\xE9is e o governo disse
-      que uma usina explodiu aqui! Era isso que eles queriam? Elas eram atr\xE1s
-      que estavam atras da gente?"
+  - text: "\"Sem o carro, elas n\xE3o iriam longe. Vamos, olhem tudo. Revirem essa
+      cidade\""
     time: 4
-  - text: "Milla... voc\xEA n\xE3o deveria saber de nada disso. Vem, precisamos voltar
-      agora, \xE9 perigoso ficar aqui."
+  - text: "\"SENHOR, achamos isso no por\xE3o\" "
     time: 3
-  - text: "Mas m\xE3e..."
+  - text: "\"Ela sabe bem mais do que imagin\xE1vamos... \xC9 prioridade encontra-la
+      \xE9 acabar com isso\" "
     time: 3
-  - text: Eu vou te explicar tudo assim que estiver seguras, okay? Eu prometo!
+  - text: "Mam\xE3e, eu estou com medo. "
     time: 3
-  - text: Certo...
+  - text: "N\xE3o vou deixar eles te tirarem de mim. Custe o que custar. Eu prometo.
+      Milla, n\xE3o podemos mais usar o carro, est\xE3o vamos... achar outro caminho"
+    time: 3
+  - text: "Pela esta\xE7\xE3o de trem Yaniv."
     time: 3
