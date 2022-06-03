@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(menuName = "Game Events")]
 public class GameEvents : ScriptableObject{
@@ -16,5 +17,13 @@ public class GameEvents : ScriptableObject{
 
     public void ViewItem(Item item){
         ItemDisplay.Instance.DisplayItem(item);
+    }
+
+    public void ActivateOnDialogEnd(GameObject gameObject){
+        Dialog.Instance.OnDialogEnd += () =>  gameObject.SetActive(true);
+    }
+
+    public void LoadScene(string sceneName){
+        SceneManager.LoadScene(sceneName);
     }
 }

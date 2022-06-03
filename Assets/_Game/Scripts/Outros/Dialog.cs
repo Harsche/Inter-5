@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
 public class Dialog : MonoBehaviour{
     [SerializeField] private TextMeshProUGUI dialogText;
+    [HideInInspector] public event Action OnDialogEnd;
     
     private Coroutine dialogCoroutine;
     
@@ -35,6 +37,8 @@ public class Dialog : MonoBehaviour{
             yield return new WaitForSeconds(t.time);
         }
         StopDialog();
+        OnDialogEnd?.Invoke();
+        OnDialogEnd = null;
     }
 }
 
