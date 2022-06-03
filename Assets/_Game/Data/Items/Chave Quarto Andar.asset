@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Chave Quarto Andar
   m_EditorClassIdentifier: 
   itemName: Chave Quarto Andar
+  itemSprite: {fileID: 21300000, guid: 3202a5bde7d22f042bfb15befeafad72, type: 3}

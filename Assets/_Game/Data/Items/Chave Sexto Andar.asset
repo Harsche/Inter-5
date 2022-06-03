@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Chave Sexto Andar
   m_EditorClassIdentifier: 
   itemName: Chave Sexto Andar
+  itemSprite: {fileID: 21300000, guid: 781b1090c3fa76445ad5798895f632da, type: 3}
