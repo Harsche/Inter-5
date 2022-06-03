@@ -13,24 +13,8 @@ MonoBehaviour:
   m_Name: Gerador de Dialogo
   m_EditorClassIdentifier: 
   dialogs:
-  - text: "Ah n\xE3o... "
-    time: 2
-  - text: "S\xE3o eles? "
-    time: 2
-  - text: "\"\xC9 o carro delas. A placa \xE9 essa, n\xE3o tenho duvida\" "
-    time: 4
-  - text: "\"Sem o carro, elas n\xE3o iriam longe. Vamos, olhem tudo. Revirem essa
-      cidade\""
-    time: 4
-  - text: "\"SENHOR, achamos isso no por\xE3o\" "
+  - text: A roda gigante! Ela fica logo a frente.
     time: 3
-  - text: "\"Ela sabe bem mais do que imagin\xE1vamos... \xC9 prioridade encontra-la
-      \xE9 acabar com isso\" "
-    time: 3
-  - text: "Mam\xE3e, eu estou com medo. "
-    time: 3
-  - text: "N\xE3o vou deixar eles te tirarem de mim. Custe o que custar. Eu prometo.
-      Milla, n\xE3o podemos mais usar o carro, est\xE3o vamos... achar outro caminho"
-    time: 3
-  - text: "Pela esta\xE7\xE3o de trem Yaniv."
+  - text: "De l\xE1, podemos seguir para o ferro-velho. A mam\xE3e tem que estar
+      l\xE1."
     time: 3
