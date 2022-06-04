@@ -37487,6 +37487,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2638854753383192189, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
+      propertyPath: nextScene
+      value: Ending
+      objectReference: {fileID: 0}
     - target: {fileID: 5816117350188601240, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
       propertyPath: m_RootOrder
       value: 4
