@@ -21996,6 +21996,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1891943337, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638854753383192189, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
+      propertyPath: nextScene
+      value: Blocagem
+      objectReference: {fileID: 0}
+    - target: {fileID: 5816117351274809714, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6817638361354391144, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
       propertyPath: m_RootOrder
       value: 0

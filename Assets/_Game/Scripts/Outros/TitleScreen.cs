@@ -8,7 +8,9 @@ using BayatGames.SaveGameFree;
 public class TitleScreen : MonoBehaviour {
     [SerializeField] private GameObject continueOption;
 
-    private void Awake() {
+    private void Awake(){
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         SaveFile saveFile = SaveGame.Load<SaveFile>("save", (SaveFile)null, true);
         if (saveFile == null) {
             continueOption.SetActive(false);
