@@ -1,16 +1,33 @@
+using System;
 using UnityEngine;
 using DG.Tweening;
 
 public class GiantWheel : MonoBehaviour{
-    private void Start(){
-        TriggerAnimation();
-    }
+    [SerializeField] private Vector3 endRotation;
+    [SerializeField] private float rotationDuration;
+    [SerializeField] private Rigidbody player;
+    [SerializeField] private Transform cabin;
+    [SerializeField] private GameObject loadEndingScene;
+
+    private bool active;
+    private Vector3 lockPosition;
     
     private void GiantWheelAnimation(){
-        
+        player.transform.SetParent(cabin);
+        player.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
+        lockPosition = player.transform.localPosition;
+        player.isKinematic = true;
+        active = true;
+        transform.DORotate(endRotation, rotationDuration, RotateMode.LocalAxisAdd)
+            .SetEase(Ease.Linear)
+            .OnComplete(() => loadEndingScene.SetActive(true));
     }
 
     public void TriggerAnimation(){
-        
+        GiantWheelAnimation();
+    }
+
+    private void Update(){
+        if(active) player.transform.localPosition = lockPosition;
     }
 }

@@ -26,6 +26,7 @@ public class InteractionEventTrigger : MonoBehaviour, IInteractable{
     }
 
     public void Interact(){
+        if (!enabled) return;
         ToggleGlow(true);
         onInteract?.Invoke();
         if(!disableObject) return;

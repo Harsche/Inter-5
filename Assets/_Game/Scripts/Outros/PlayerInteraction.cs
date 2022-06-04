@@ -1,14 +1,15 @@
+using System;
 using UnityEngine;
 using SUPERCharacter;
 
 public class PlayerInteraction : MonoBehaviour{
-    [SerializeField] private float interactRadius = 1f;
+    [SerializeField] private float interactDistance = 1f;
     [SerializeField] private LayerMask interactableLayer;
     [SerializeField] private SUPERCharacterAIO movement;
     [SerializeField] private Rigidbody playerRigidbody;
-    private Transform myTransform;
-    
+
     public SUPERCharacterAIO Movement => movement;
+    private float walkingSpeed;
     
     public static IInteractable Interactable{ get; private set; }
     public static PlayerInteraction Instance{ get; private set; }
@@ -22,11 +23,19 @@ public class PlayerInteraction : MonoBehaviour{
         }
 
         Instance = this;
-        myTransform = transform;
+    }
+
+    private void Start(){
+        walkingSpeed = movement.walkingSpeed;
     }
 
     public void ToggleMovement(bool toggle){
         movement.controllerPaused = !toggle;
+        playerRigidbody.velocity = Vector3.zero;
+    }
+    
+    public void ToggleWalk(bool toggle){
+        movement.walkingSpeed = toggle ? walkingSpeed : 0f;
         playerRigidbody.velocity = Vector3.zero;
     }
 
@@ -39,17 +48,18 @@ public class PlayerInteraction : MonoBehaviour{
     }
 
     private void CheckForInteraction(){
-        var halfExtents = new Vector3(1f, 0.75f, 0.1f);
-        Collider[] colliders = Physics.OverlapSphere(
-            transform.position,
-            interactRadius,
+        Transform cameraTransform = movement.playerCamera.transform;
+        Physics.Raycast(
+            cameraTransform.position,
+            cameraTransform.forward,
+            out RaycastHit hitInfo,
+            interactDistance,
             interactableLayer
         );
         
-        if (colliders.Length == 0)
-            Interactable = null;
-        if (colliders.Length > 0 && Interactable == null){
-            Interactable = colliders[0].gameObject.GetComponent<IInteractable>();
+        if (hitInfo.collider ==  null) Interactable = null;
+        if (hitInfo.collider != null && Interactable == null){
+            Interactable = hitInfo.collider.gameObject.GetComponent<IInteractable>();
             Interactable?.ToggleGlow(true);
         }
     }

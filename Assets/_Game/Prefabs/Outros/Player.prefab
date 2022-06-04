@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 321dc52197b87eb49814714ed2264fbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactRadius: 0.25
+  interactDistance: 1.5
   interactableLayer:
     serializedVersion: 2
     m_Bits: 1024
@@ -2066,7 +2066,7 @@ MonoBehaviour:
     hasLowHealth: 0
     isStarving: 0
     isDehydrated: 0
-  interactKey_L: 282
+  interactKey_L: 0
   interactRange: 2.4
   interactableLayer:
     serializedVersion: 2

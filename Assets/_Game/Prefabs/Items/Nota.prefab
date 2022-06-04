@@ -351,7 +351,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000004, y: 1, z: 1.0000004}
+  m_Size: {x: 1.37, y: 1.000001, z: 1.42}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1790753552
 MonoBehaviour:
@@ -365,6 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd1b6d270a87e874ab3bd15ade9d058f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disableObject: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -380,7 +381,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  disableObject: 0
 --- !u!114 &1790753553
 MonoBehaviour:
   m_ObjectHideFlags: 0

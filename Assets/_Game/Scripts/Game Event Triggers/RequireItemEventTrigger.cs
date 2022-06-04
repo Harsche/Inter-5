@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Events;
 
@@ -18,11 +19,21 @@ public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
     }
 
     private void Update(){
+        if (!enabled){
+            ToggleGlow(false);
+            return;
+        }
+
         if (this != PlayerInteraction.Interactable)
             ToggleGlow(false);
     }
 
+    private void OnDisable(){
+        ToggleGlow(false);
+    }
+
     public void Interact(){
+        if (!enabled) return;
         if (!PlayerInteraction.godMode){
             if (Inventory.Instance.SelectedItem != requiredItem){
                 missingItem?.Invoke();
@@ -31,7 +42,8 @@ public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
 
             if (!Inventory.Instance.RemoveItem(requiredItem)) return;
         }
-        ToggleGlow(true);
+
+        ToggleGlow(false);
         onUseItem?.Invoke();
         if (!disableObject) return;
         Tween tween = transform.DOScale(Vector3.zero, 0.5f);
