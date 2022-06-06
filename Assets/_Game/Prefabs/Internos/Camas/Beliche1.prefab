@@ -43,6 +43,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Beliche (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4054307779516694489, guid: dc670c65134e13740a3936ddc48a93df, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.997
+      objectReference: {fileID: 0}
     - target: {fileID: 4089723416327390638, guid: dc670c65134e13740a3936ddc48a93df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -115,6 +119,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0a3f4ad2318a09c4591fb62286ab2586, type: 2}
+    - target: {fileID: 8062446629067490868, guid: dc670c65134e13740a3936ddc48a93df, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.69000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 8266495982967460061, guid: dc670c65134e13740a3936ddc48a93df, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8978666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9099570125259511575, guid: dc670c65134e13740a3936ddc48a93df, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8978666
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc670c65134e13740a3936ddc48a93df, type: 3}
 --- !u!4 &6729809858086930773 stripped
@@ -155,7 +171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2035940711074362990, guid: f46d57e05fc9fc540ac89bf8e0fefebb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.049999952
       objectReference: {fileID: 0}
     - target: {fileID: 2035940711074362990, guid: f46d57e05fc9fc540ac89bf8e0fefebb, type: 3}
       propertyPath: m_LocalPosition.z

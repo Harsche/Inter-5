@@ -25644,6 +25644,8 @@ GameObject:
   - component: {fileID: 51391200651889795}
   - component: {fileID: 51391200651889794}
   - component: {fileID: 51391200651889797}
+  - component: {fileID: 1263473554917218214}
+  - component: {fileID: 5452240015383589337}
   m_Layer: 0
   m_Name: polySurface5181
   m_TagString: Untagged
@@ -25729,6 +25731,52 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7406233778610259334, guid: 5b38fc6ad6e54914e9140b428214461a, type: 3}
+--- !u!114 &1263473554917218214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51391200651889799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &5452240015383589337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51391200651889799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd1b6d270a87e874ab3bd15ade9d058f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableObject: 0
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: bcfdc17cb725a0c4e8824e3bd8cf7fc9, type: 2}
+        m_TargetAssemblyTypeName: GameEvents, Assembly-CSharp
+        m_MethodName: TriggerDialog
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4900000, guid: eef7f3e65f285f24eb8b1f26fd3fd87b, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.TextAsset, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &51391200676100173
 GameObject:
   m_ObjectHideFlags: 0

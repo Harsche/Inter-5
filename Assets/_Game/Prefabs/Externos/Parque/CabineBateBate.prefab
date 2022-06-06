@@ -29,7 +29,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2080.6958, y: 1.5572469, z: -824.93646}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 3006305990574684723}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -97,3 +98,47 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3200370092790499114, guid: 66bb8b9361ba5884d9227a54b4e055b7, type: 3}
+--- !u!1 &6219482455091753015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3006305990574684723}
+  - component: {fileID: 2233109703545779395}
+  m_Layer: 0
+  m_Name: Collider teto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3006305990574684723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6219482455091753015}
+  m_LocalRotation: {x: -0, y: -0, z: -0.103353485, w: 0.9946447}
+  m_LocalPosition: {x: -0.156, y: 1.299, z: -0.682}
+  m_LocalScale: {x: 0.99999976, y: 0.2125, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 5999633179686225914}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -11.865}
+--- !u!65 &2233109703545779395
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6219482455091753015}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4664392, y: 0.8199407, z: 2.4757483}
+  m_Center: {x: 0.16339418, y: -0.0900294, z: 0.68326885}
