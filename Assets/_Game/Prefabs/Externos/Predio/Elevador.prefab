@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5197967347195044840}
   - component: {fileID: 4770413202599834216}
   - component: {fileID: 681172492578767203}
+  - component: {fileID: 3471669922479078382}
   m_Layer: 0
   m_Name: polySurface5617
   m_TagString: Untagged
@@ -129,6 +130,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &3471669922479078382
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820890589396148309}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024060393, y: 0.047125462, z: 0.074085385}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1316242446580849996
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,6 +154,7 @@ GameObject:
   - component: {fileID: 1955503291790562581}
   - component: {fileID: 3888516813055514155}
   - component: {fileID: 4824130727045992313}
+  - component: {fileID: 3137788965059848875}
   m_Layer: 0
   m_Name: polySurface5619
   m_TagString: Untagged
@@ -211,6 +226,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3137788965059848875
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316242446580849996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.058509324, y: 0.5085803, z: 0.41684845}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1669484449563117344
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +348,7 @@ GameObject:
   - component: {fileID: 8465422583833193590}
   - component: {fileID: 8324792025404419009}
   - component: {fileID: 3491869926333814433}
+  - component: {fileID: 8869482148894424153}
   m_Layer: 0
   m_Name: polySurface5615
   m_TagString: Untagged
@@ -436,6 +465,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &8869482148894424153
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3242711911126502376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024060393, y: 0.04712528, z: 0.074085385}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3837428079258336832
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +748,7 @@ GameObject:
   - component: {fileID: 4776786530758042001}
   - component: {fileID: 6868022324372875399}
   - component: {fileID: 7614838061806166728}
+  - component: {fileID: 772117725980398688}
   m_Layer: 0
   m_Name: polySurface5616
   m_TagString: Untagged
@@ -822,6 +865,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &772117725980398688
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4614512924375714544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024060393, y: 0.04712528, z: 0.074085385}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4726898396478169858
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,6 +986,7 @@ GameObject:
   - component: {fileID: 6663614358621092895}
   - component: {fileID: 4101883689030322322}
   - component: {fileID: 8561148632087859974}
+  - component: {fileID: 1198358009655291424}
   m_Layer: 0
   m_Name: polySurface5618
   m_TagString: Untagged
@@ -1046,3 +1103,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &1198358009655291424
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8261985684954222776}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.024060301, y: 0.04712528, z: 0.074085385}
+  m_Center: {x: 0, y: 0, z: 0}
