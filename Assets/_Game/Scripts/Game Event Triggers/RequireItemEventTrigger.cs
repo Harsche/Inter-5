@@ -6,6 +6,7 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Outline))]
 public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
     [SerializeField] private bool disableObject;
+    [SerializeField] private bool consumeItem = true;
     [SerializeField] private Item requiredItem;
     [SerializeField] private UnityEvent onUseItem;
     [SerializeField] private UnityEvent missingItem;
@@ -43,6 +44,8 @@ public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
                 missingItem?.Invoke();
                 return;
             }
+            
+            if(consumeItem) Inventory.Instance.RemoveItem(requiredItem);
         }
 
         ToggleGlow(false);
