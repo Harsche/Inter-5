@@ -31,6 +31,10 @@ public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
     private void OnDisable(){
         ToggleGlow(false);
     }
+    
+    public bool InteractionEnabled(){
+        return enabled;
+    }
 
     public void Interact(){
         if (!enabled) return;
@@ -39,8 +43,6 @@ public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
                 missingItem?.Invoke();
                 return;
             }
-
-            if (!Inventory.Instance.RemoveItem(requiredItem)) return;
         }
 
         ToggleGlow(false);

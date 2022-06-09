@@ -60,7 +60,7 @@ public class PlayerInteraction : MonoBehaviour{
         if (hitInfo.collider ==  null) Interactable = null;
         if (hitInfo.collider != null && Interactable == null){
             Interactable = hitInfo.collider.gameObject.GetComponent<IInteractable>();
-            Interactable?.ToggleGlow(true);
+            if(Interactable != null && Interactable.InteractionEnabled()) Interactable.ToggleGlow(true);
         }
     }
 }
@@ -68,4 +68,5 @@ public class PlayerInteraction : MonoBehaviour{
 public interface IInteractable{
     public void Interact();
     public void ToggleGlow(bool value);
+    public bool InteractionEnabled();
 }

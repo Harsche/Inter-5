@@ -25,11 +25,15 @@ public class InteractionEventTrigger : MonoBehaviour, IInteractable{
         outline.enabled = value;
     }
 
+    public bool InteractionEnabled(){
+        return enabled;
+    }
+
     public void Interact(){
         if (!enabled) return;
         ToggleGlow(true);
         onInteract?.Invoke();
-        if(!disableObject) return;
+        if (!disableObject) return;
         Tween tween = transform.DOScale(Vector3.zero, 0.5f);
         tween.SetLink(gameObject);
         tween.OnComplete(() => gameObject.SetActive(false));
