@@ -41,7 +41,7 @@ public class PlayerInteraction : MonoBehaviour{
 
     private void Update(){
         CheckForInteraction();
-        if (Input.GetKeyDown(KeyCode.F) && Interactable != null){
+        if (Input.GetKeyDown(KeyCode.E) && Interactable != null){
             Interactable.Interact();
             Interactable = null;
         }

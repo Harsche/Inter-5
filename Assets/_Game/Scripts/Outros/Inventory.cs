@@ -31,12 +31,12 @@ public class Inventory : MonoBehaviour{
     }
 
     private void Update(){
-        if (Input.GetKeyDown(KeyCode.E)){
+        if (Input.GetKeyDown(KeyCode.RightArrow)){
             selectedIndex++;
             if (selectedIndex > inventory.Count - 1) selectedIndex = 0;
             UpdateHUD();
         }
-        else if (Input.GetKeyDown(KeyCode.Q)){
+        else if (Input.GetKeyDown(KeyCode.LeftArrow)){
             selectedIndex--;
             if (selectedIndex < 0) selectedIndex = inventory.Count - 1;
             UpdateHUD();
