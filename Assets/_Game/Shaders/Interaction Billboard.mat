@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Interaction Billboard
-  m_Shader: {fileID: -6465566751694194690, guid: b986b9b0b495f614d9c9f5b33bb2c448, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 52bae5ecfe0e26c4d9fd092767edd741, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,8 +19,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_183bf77115014fc2b18e2fae331c4a13:
-        m_Texture: {fileID: 2800000, guid: 0520a9eb5aecc7c4c986927a78b6513e, type: 3}
+    - Texture2D_4563a492c01845af9be114f7fda0aef8:
+        m_Texture: {fileID: 2800000, guid: 77471f6d35d40214e865613d270303d5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 77471f6d35d40214e865613d270303d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -35,6 +39,8 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
+    m_Floats:
+    - Alpha: 1
+    - Vector1_93c4760fb1284f3f9660b883aa0f938b: 1
     m_Colors: []
   m_BuildTextureStacks: []

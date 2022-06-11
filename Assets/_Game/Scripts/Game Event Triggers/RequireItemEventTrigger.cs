@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Events;
 
@@ -10,8 +9,10 @@ public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
     [SerializeField] private Item requiredItem;
     [SerializeField] private UnityEvent onUseItem;
     [SerializeField] private UnityEvent missingItem;
+    [SerializeField] private InteractionIcon interactionIcon;
 
     private Outline outline;
+    private bool selected;
 
     private void Awake(){
         outline = GetComponent<Outline>();
@@ -49,6 +50,7 @@ public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
         }
 
         ToggleGlow(false);
+        if(disableObject) interactionIcon.Toggle(false);
         onUseItem?.Invoke();
         if (!disableObject) return;
         Tween tween = transform.DOScale(Vector3.zero, 0.5f);
@@ -58,5 +60,6 @@ public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
 
     public void ToggleGlow(bool value){
         outline.enabled = value;
+        if(interactionIcon != null) interactionIcon.Toggle(value);
     }
 }
