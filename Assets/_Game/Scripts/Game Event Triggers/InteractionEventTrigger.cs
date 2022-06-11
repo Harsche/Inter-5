@@ -7,8 +7,10 @@ using UnityEngine.Events;
 public class InteractionEventTrigger : MonoBehaviour, IInteractable{
     [SerializeField] private bool disableObject;
     [SerializeField] private UnityEvent onInteract;
+    [SerializeField] private InteractionIcon interactionIcon;
 
     private Outline outline;
+    private bool selected;
 
     private void Awake(){
         outline = GetComponent<Outline>();
@@ -17,12 +19,17 @@ public class InteractionEventTrigger : MonoBehaviour, IInteractable{
     }
 
     private void Update(){
-        if (this != PlayerInteraction.Interactable)
+        if(!selected) return;
+        if (this != PlayerInteraction.Interactable){
+            selected = false;
             ToggleGlow(false);
+        }
     }
 
     public void ToggleGlow(bool value){
+        if (value) selected = true;
         outline.enabled = value;
+        if(interactionIcon != null) interactionIcon.Toggle(value);
     }
 
     public bool InteractionEnabled(){
@@ -32,6 +39,7 @@ public class InteractionEventTrigger : MonoBehaviour, IInteractable{
     public void Interact(){
         if (!enabled) return;
         ToggleGlow(true);
+        if(disableObject) interactionIcon.Toggle(false);
         onInteract?.Invoke();
         if (!disableObject) return;
         Tween tween = transform.DOScale(Vector3.zero, 0.5f);
