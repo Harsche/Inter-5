@@ -42,6 +42,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CamaCasado
       objectReference: {fileID: 0}
+    - target: {fileID: 846633083623380961, guid: 037fbc4386642e047a21167469eec679, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5371654469480808549, guid: 037fbc4386642e047a21167469eec679, type: 3}
       propertyPath: m_RootOrder
       value: 0

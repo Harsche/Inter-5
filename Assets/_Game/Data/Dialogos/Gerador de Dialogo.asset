@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Gerador de Dialogo
   m_EditorClassIdentifier: 
   dialogs:
-  - text: A roda gigante! Ela fica logo a frente.
-    time: 3
-  - text: "De l\xE1, podemos seguir para o ferro-velho. A mam\xE3e tem que estar
-      l\xE1."
-    time: 3
+  - text: "Funcionou! Agora a roda gigante funciona! Posso procurar a mam\xE3e l\xE1
+      de cima."
+    time: 4
