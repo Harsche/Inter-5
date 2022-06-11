@@ -205,8 +205,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6271573414225017425, guid: ee18ce8592065a548b3d733302c02795, type: 3}
+  - {fileID: 2100000, guid: c45eb715e2e3b0942b693b53d584f852, type: 2}
   - {fileID: 2100000, guid: 8f2d0d89eb1340345b277ddae3886f45, type: 2}
+  - {fileID: 2100000, guid: 0a3f4ad2318a09c4591fb62286ab2586, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -239,8 +240,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.06941965, y: 2.9645596, z: 1.0960691}
-  m_Center: {x: 0.0021984237, y: 0.018215656, z: -0.0057373033}
+  m_Size: {x: 0.06941965, y: 2.907713, z: 1.0627439}
+  m_Center: {x: 0.0021984237, y: -0.021592319, z: -0.00018310543}
 --- !u!114 &268385753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,10 +254,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd50a0a6673740279edde809e9de6f0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disableObject: 0
+  consumeItem: 1
   requiredItem: {fileID: 11400000, guid: 722319a1bf6dd6240a89849e8c1d670c, type: 2}
   onUseItem:
     m_PersistentCalls:
       m_Calls: []
+  missingItem:
+    m_PersistentCalls:
+      m_Calls: []
+  interactionIcon: {fileID: 0}
 --- !u!114 &268385754
 MonoBehaviour:
   m_ObjectHideFlags: 0

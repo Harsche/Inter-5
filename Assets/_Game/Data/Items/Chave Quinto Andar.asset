@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Chave Quinto Andar
   itemSprites:
-  - {fileID: 21300000, guid: 781b1090c3fa76445ad5798895f632da, type: 3}
+  - {fileID: 21300000, guid: 0cc086cf431207b41af382541fe38829, type: 3}
