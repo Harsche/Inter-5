@@ -1153,10 +1153,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NotaMamae
       objectReference: {fileID: 0}
-    - target: {fileID: 6285240306178523481, guid: 20ebec49baeacec42900363fe2c041d5, type: 3}
-      propertyPath: yOffset
-      value: -0.05
-      objectReference: {fileID: 0}
     - target: {fileID: 6661519215277464548, guid: 20ebec49baeacec42900363fe2c041d5, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.27914086
