@@ -21,13 +21,16 @@ public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
     }
 
     private void Update(){
+        if (!selected) return;
         if (!enabled){
             ToggleGlow(false);
             return;
         }
 
-        if (this != PlayerInteraction.Interactable)
+        if (this != PlayerInteraction.Interactable){
+            selected = false;
             ToggleGlow(false);
+        }
     }
 
     private void OnDisable(){
@@ -59,6 +62,7 @@ public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
     }
 
     public void ToggleGlow(bool value){
+        if (value) selected = true;
         outline.enabled = value;
         if(interactionIcon != null) interactionIcon.Toggle(value);
     }
