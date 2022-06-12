@@ -2,10 +2,14 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class Inventory : MonoBehaviour{
     [SerializeField] private RectTransform selectedTransform;
     [SerializeField] private RectTransform lastSelectedTransform;
+    [SerializeField] private GameObject leftArrow;
+    [SerializeField] private GameObject rightArrow;
+    [SerializeField] private Image background;
 
     private Image selectedItemImage;
     private Image lastItemImage;
@@ -44,12 +48,20 @@ public class Inventory : MonoBehaviour{
     }
 
     private void UpdateHUD(){
+        UpdateArrows();
         if (inventory.Count == 0){
             selectedItemImage.enabled = false;
+            background.DOFade(0f, 1f);
             return;
         }
+        background.DOFade(1f, 1f);
         selectedItemImage.enabled = true;
         selectedItemImage.sprite = inventory[selectedIndex].itemSprites[0];
+    }
+    
+    private void UpdateArrows(){
+        leftArrow.SetActive(inventory.Count > 1);
+        rightArrow.SetActive(inventory.Count > 1);
     }
 
     public void AddItem(Item item){
