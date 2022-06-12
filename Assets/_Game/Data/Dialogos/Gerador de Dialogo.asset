@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Gerador de Dialogo
   m_EditorClassIdentifier: 
   dialogs:
-  - text: "Funcionou! Agora a roda gigante funciona! Posso procurar a mam\xE3e l\xE1
-      de cima."
-    time: 4
+  - text: "Esses apartamentos s\xE3o bonitos! Ser\xE1 que as pessoas sentiram falta
+      de morar aqui?"
+    time: 3
+  - text: "Ser\xE1 que a Gretta sentiu falta da casa dela, igual eu sinto da nossa,
+      sr. Fluffy?"
+    time: 3
