@@ -1723,7 +1723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6117647}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3500,7 +3500,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 92, y: 63.4}
+  m_AnchoredPosition: {x: 92, y: 53.399902}
   m_SizeDelta: {x: 102.419, y: 102.419}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5816117350392531468
@@ -5862,44 +5862,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5603043670081609213, guid: be371b711eac1b946800fc6311a28831, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.24499953
+      value: -0.245
       objectReference: {fileID: 0}
     - target: {fileID: 5603043670081609213, guid: be371b711eac1b946800fc6311a28831, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.26599997
+      value: 0.137
       objectReference: {fileID: 0}
     - target: {fileID: 5603043670081609213, guid: be371b711eac1b946800fc6311a28831, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.10799981
+      value: 0.279
       objectReference: {fileID: 0}
     - target: {fileID: 5603043670081609213, guid: be371b711eac1b946800fc6311a28831, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.15225881
+      value: 0.23926754
       objectReference: {fileID: 0}
     - target: {fileID: 5603043670081609213, guid: be371b711eac1b946800fc6311a28831, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.13467696
+      value: -0.11715216
       objectReference: {fileID: 0}
     - target: {fileID: 5603043670081609213, guid: be371b711eac1b946800fc6311a28831, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.95035976
+      value: 0.9633629
       objectReference: {fileID: 0}
     - target: {fileID: 5603043670081609213, guid: be371b711eac1b946800fc6311a28831, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.23557499
+      value: -0.030957222
       objectReference: {fileID: 0}
     - target: {fileID: 5603043670081609213, guid: be371b711eac1b946800fc6311a28831, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -24.982
+      value: 0.205
       objectReference: {fileID: 0}
     - target: {fileID: 5603043670081609213, guid: be371b711eac1b946800fc6311a28831, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 152.045
+      value: 152.079
       objectReference: {fileID: 0}
     - target: {fileID: 5603043670081609213, guid: be371b711eac1b946800fc6311a28831, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -22.65
+      value: -13.918
       objectReference: {fileID: 0}
+    - target: {fileID: 9135780029650374451, guid: be371b711eac1b946800fc6311a28831, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -5731180737584164368, guid: afacbbb0618ffa34b81d158821087322, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be371b711eac1b946800fc6311a28831, type: 3}
 --- !u!4 &1655180943646618601 stripped
@@ -5925,4 +5929,4 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: -1045104834805564502, guid: 05f2d62e26c963b4b9717bbead843ba3, type: 3}
+  m_Mesh: {fileID: -5731180737584164368, guid: afacbbb0618ffa34b81d158821087322, type: 3}
