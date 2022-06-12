@@ -9,10 +9,12 @@ public class PlayerInteraction : MonoBehaviour{
     [SerializeField] private Rigidbody playerRigidbody;
 
     public SUPERCharacterAIO Movement => movement;
+    public Rigidbody PlayerRigidbody => playerRigidbody;
     private float walkingSpeed;
     
     public static IInteractable Interactable{ get; private set; }
     public static PlayerInteraction Instance{ get; private set; }
+    
     public static bool godMode;
     
 
