@@ -38060,15 +38060,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6817638361354391144, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2142.823
+      value: 2142.918
       objectReference: {fileID: 0}
     - target: {fileID: 6817638361354391144, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.78
+      value: 0.858
       objectReference: {fileID: 0}
     - target: {fileID: 6817638361354391144, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -922.84
+      value: -922.791
       objectReference: {fileID: 0}
     - target: {fileID: 6817638361354391144, guid: 32fce1012f8c24c43af86f00f457f500, type: 3}
       propertyPath: m_LocalRotation.w
@@ -93681,6 +93681,7 @@ GameObject:
   - component: {fileID: 171102205851826636}
   - component: {fileID: 4039558373697841040}
   - component: {fileID: 938888080384327584}
+  - component: {fileID: 8164832071597647302}
   m_Layer: 0
   m_Name: polySurface414
   m_TagString: Untagged
@@ -93688,6 +93689,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8164832071597647302
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164832071597647301}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 9128466305238999362, guid: ee18ce8592065a548b3d733302c02795, type: 3}
 --- !u!23 &8276392443292693684
 MeshRenderer:
   m_ObjectHideFlags: 0
