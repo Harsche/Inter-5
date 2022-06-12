@@ -42,7 +42,10 @@ public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
     }
 
     public void Interact(){
-        if (!enabled) return;
+        if (!enabled){
+            Debug.Log("DEBUG 1");
+            return;
+        }
         if (!PlayerInteraction.godMode){
             if (Inventory.Instance.SelectedItem != requiredItem){
                 missingItem?.Invoke();
@@ -55,7 +58,9 @@ public class RequireItemEventTrigger : MonoBehaviour, IInteractable{
         ToggleGlow(false);
         if(disableObject) interactionIcon.Toggle(false);
         onUseItem?.Invoke();
+        Debug.Log("DEBUG 2");
         if (!disableObject) return;
+        Debug.Log("DEBUG 3");
         Tween tween = transform.DOScale(Vector3.zero, 0.5f);
         tween.SetLink(gameObject);
         tween.OnComplete(() => gameObject.SetActive(false));
