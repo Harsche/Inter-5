@@ -11,14 +11,19 @@ public class GiantWheel : MonoBehaviour{
 
     private bool active;
     private Vector3 lockPosition;
-    
+    private Rigidbody giantWheel;
+
+    private void Awake(){
+        giantWheel = GetComponent<Rigidbody>();
+    }
+
     private void GiantWheelAnimation(){
         player.transform.SetParent(cabin);
         player.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
         lockPosition = player.transform.localPosition;
         player.isKinematic = true;
         active = true;
-        transform.DORotate(endRotation, rotationDuration, RotateMode.LocalAxisAdd)
+        giantWheel.DORotate(endRotation, rotationDuration, RotateMode.LocalAxisAdd)
             .SetEase(Ease.Linear)
             .OnComplete(() => loadEndingScene.SetActive(true))
             .SetLink(gameObject);
