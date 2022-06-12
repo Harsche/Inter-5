@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2355075201338284953}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.69, y: 1.395, z: -2.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8409755193246657957}
@@ -240,8 +240,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.06941965, y: 2.907713, z: 1.0627439}
-  m_Center: {x: 0.0021984237, y: -0.021592319, z: -0.00018310543}
+  m_Size: {x: 0.066711396, y: 2.8976746, z: 1.0192866}
+  m_Center: {x: -2.1253357, y: 1.4697828, z: -1.807645}
 --- !u!114 &268385753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,10 +307,10 @@ HingeJoint:
   m_GameObject: {fileID: 8017805980351339257}
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0, z: 0.537}
+  m_Anchor: {x: -2, y: 1.35, z: -1.25}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 2150.7715, y: 5.587887, z: -928.0564}
+  m_ConnectedAnchor: {x: 2164.5618, y: 1.4644319, z: -928.01794}
   m_UseSpring: 0
   m_Spring:
     spring: 0

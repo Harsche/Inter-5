@@ -33,5 +33,6 @@ public class GameEvents : ScriptableObject{
 
     public void DontDestroy(GameObject gameObject){
         DontDestroyOnLoad(gameObject);
+        gameObject.tag = "DontDestroy";
     }
 }
