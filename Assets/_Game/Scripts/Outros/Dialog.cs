@@ -46,6 +46,7 @@ public class Dialog : MonoBehaviour{
 public class DialogText{
     public string text;
     public float time;
+    public Color dialogColor = Color.white;
 
     public DialogText(string text, float time){
         this.text = text;

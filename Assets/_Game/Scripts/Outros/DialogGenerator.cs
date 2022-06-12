@@ -15,6 +15,11 @@ public class DialogGenerator : ScriptableObject{
         var serializeDialog = new SerializeDialog{
             dialog = dialogs
         };
+        for (int i = 0; i < dialogs.Length; i++){
+            string colorHex = ColorUtility.ToHtmlStringRGB(dialogs[i].dialogColor);
+            serializeDialog.dialog[i].text = $"<color=#{colorHex}>" + serializeDialog.dialog[i].text;
+            serializeDialog.dialog[i].text += "</color>";
+        }
         File.WriteAllText(path, JsonUtility.ToJson(serializeDialog));
     }
 }
