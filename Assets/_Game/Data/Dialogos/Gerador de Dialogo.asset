@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: Gerador de Dialogo
   m_EditorClassIdentifier: 
   dialogs:
-  - text: "Esses apartamentos s\xE3o bonitos! Ser\xE1 que as pessoas sentiram falta
-      de morar aqui?"
+  - text: "Precisamos contar tudo isso para a mam\xE3e! "
     time: 3
-  - text: "Ser\xE1 que a Gretta sentiu falta da casa dela, igual eu sinto da nossa,
-      sr. Fluffy?"
-    time: 3
+  - text: Temos que sair logo daqui, sr. Fluffy!
+    time: 2
