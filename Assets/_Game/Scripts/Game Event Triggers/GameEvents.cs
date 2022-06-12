@@ -26,4 +26,8 @@ public class GameEvents : ScriptableObject{
     public void LoadScene(string sceneName){
         SceneManager.LoadScene(sceneName);
     }
+
+    public void TeleportPlayer(Transform teleportPosition){
+        PlayerInteraction.Instance.PlayerRigidbody.position = teleportPosition.position;
+    }
 }
