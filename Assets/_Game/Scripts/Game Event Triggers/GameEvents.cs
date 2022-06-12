@@ -30,4 +30,8 @@ public class GameEvents : ScriptableObject{
     public void TeleportPlayer(Transform teleportPosition){
         PlayerInteraction.Instance.PlayerRigidbody.position = teleportPosition.position;
     }
+
+    public void DontDestroy(GameObject gameObject){
+        DontDestroyOnLoad(gameObject);
+    }
 }
