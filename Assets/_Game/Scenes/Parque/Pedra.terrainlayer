@@ -7,8 +7,8 @@ TerrainLayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Pedra
-  m_DiffuseTexture: {fileID: 2800000, guid: 0d4aabe7850344440ad3bf071d65e354, type: 3}
-  m_NormalMapTexture: {fileID: 2800000, guid: 639c9d217d18f0740817e8cfd1d64679, type: 3}
+  m_DiffuseTexture: {fileID: 2800000, guid: e16082a46730ac144ad2cfc0672af0a6, type: 3}
+  m_NormalMapTexture: {fileID: 2800000, guid: 05ba60cd98a7754478e55fb918b5b16e, type: 3}
   m_MaskMapTexture: {fileID: 0}
   m_TileSize: {x: 4, y: 4}
   m_TileOffset: {x: 0, y: 0}
