@@ -20,7 +20,8 @@ public class GiantWheel : MonoBehaviour{
         active = true;
         transform.DORotate(endRotation, rotationDuration, RotateMode.LocalAxisAdd)
             .SetEase(Ease.Linear)
-            .OnComplete(() => loadEndingScene.SetActive(true));
+            .OnComplete(() => loadEndingScene.SetActive(true))
+            .SetLink(gameObject);
     }
 
     public void TriggerAnimation(){
