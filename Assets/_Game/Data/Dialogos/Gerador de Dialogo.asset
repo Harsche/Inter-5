@@ -13,7 +13,5 @@ MonoBehaviour:
   m_Name: Gerador de Dialogo
   m_EditorClassIdentifier: 
   dialogs:
-  - text: "Precisamos contar tudo isso para a mam\xE3e! "
+  - text: "N\xE3o acho que a mam\xE3e esteja aqui! Melhor voltar."
     time: 3
-  - text: Temos que sair logo daqui, sr. Fluffy!
-    time: 2
